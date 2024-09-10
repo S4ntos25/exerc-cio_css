@@ -1,107 +1,64 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
-body > header{
-    background-color: rgb(70, 68, 68);
-    padding: 16px 0;
-    color: white;
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
 }
-header .container{
-    display: flex;
-    align-items:baseline;
-    justify-content: space-between;
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
 }
-header li{ 
-    display: inline;
+
+h2 {
+    text-align: center;
+    margin-bottom: 16px;
 }
-header li a{
-    color: white;
-    margin-left: 16px;
-    text-decoration: none;
-    border-style: ridge;
-    padding: 5px;
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-header li a:hover{
+
+.form-campo {
+    margin-bottom: 20px;
+}
+
+.form-campo label {
+    display: block;
     font-weight: bold;
-    background-color: black;
-    text-decoration: double;
+    margin-bottom: 5px;
 }
 
-.container{
-    width: 1366px;
-    margin: 2px auto;
-
-}
-.articles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.articles article img{
+.form-campo input {
     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.articles article{
-    width: 30%;
-}
-
-.img {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-section{
-    padding: 16px 0;
-}
-
-section h2,
-.articles article{
-    margin-bottom: 24px;
-}
-
-.articles article h3{
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.articles article a{
-    background-color: rgb(105, 15, 141);
+.container button {
+    background-color: #007bff;
     color: white;
-    padding: 8px;
-    display: inline-block;
-    text-decoration: none; 
-    margin-top: 8px;
-    font-weight:lighter
-}
-
-.articles article a:hover{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
     font-weight: bold;
+    display: inline-block;
 }
 
-.articles article p,
-.articles article a{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.articles h3{
-    font-size: 24px;
-}
-
-section h2{
-    font-size: 32px;
-}
-
-#Ambiental{
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
-#Ambiental .articles article a{
-    background-color: green;
-}
-
-#olimpiadas{
-    background-color: rgba(100, 0, 255, 0.1);
+.error {
+    color: red
 }
